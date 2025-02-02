@@ -11,7 +11,7 @@
 #include "trcs_driver_flags.h"
 #endif
 #include "error.h"
-#include "math.h"
+#include "maths.h"
 #include "trcs_hw.h"
 #include "types.h"
 

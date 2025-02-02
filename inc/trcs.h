@@ -11,7 +11,7 @@
 #ifndef TRCS_DRIVER_DISABLE_FLAGS_FILE
 #include "trcs_driver_flags.h"
 #endif
-#include "math.h"
+#include "maths.h"
 #include "types.h"
 
 /*** TRCS structures ***/
