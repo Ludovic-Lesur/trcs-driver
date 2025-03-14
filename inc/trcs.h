@@ -11,6 +11,7 @@
 #ifndef TRCS_DRIVER_DISABLE_FLAGS_FILE
 #include "trcs_driver_flags.h"
 #endif
+#include "error.h"
 #include "maths.h"
 #include "types.h"
 
@@ -27,7 +28,7 @@ typedef enum {
     TRCS_ERROR_OVERFLOW,
     TRCS_ERROR_RANGE,
     // Low level drivers errors.
-    TRCS_ERROR_BASE_GPIO = 0x0100,
+    TRCS_ERROR_BASE_GPIO = ERROR_BASE_STEP,
     TRCS_ERROR_BASE_TIMER = (TRCS_ERROR_BASE_GPIO + TRCS_DRIVER_GPIO_ERROR_BASE_LAST),
     TRCS_ERROR_BASE_ADC = (TRCS_ERROR_BASE_TIMER + TRCS_DRIVER_TIMER_ERROR_BASE_LAST),
     TRCS_ERROR_BASE_MATH = (TRCS_ERROR_BASE_ADC + TRCS_DRIVER_ADC_ERROR_BASE_LAST),
