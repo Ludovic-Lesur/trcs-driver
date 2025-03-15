@@ -153,8 +153,7 @@ TRCS_status_t TRCS_de_init(void) {
     // Local variables.
     TRCS_status_t status = TRCS_SUCCESS;
     // Disable all ranges.
-    status = _TRCS_set_off_state(0);
-    if (status != TRCS_SUCCESS) goto errors;
+    _TRCS_set_off_state(0);
     // Release hardware interface.
     status = TRCS_HW_de_init();
     if (status != TRCS_SUCCESS) goto errors;
