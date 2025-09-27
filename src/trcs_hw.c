@@ -11,6 +11,7 @@
 #include "trcs_driver_flags.h"
 #endif
 #include "trcs.h"
+#include "types.h"
 
 #ifndef TRCS_DRIVER_DISABLE
 
