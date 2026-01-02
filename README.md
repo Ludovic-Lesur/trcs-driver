@@ -37,3 +37,22 @@ Here is the versions compatibility table:
 | `TRCS_DRIVER_TIMER_ERROR_BASE_LAST` | `<value>` | Last error base of the low level timer driver. |
 | `TRCS_DRIVER_ADC_ERROR_BASE_LAST` | `<value>` | Last error base of the low level ADC driver. |
 | `TRCS_DRIVER_ADC_RANGE_MV` | `<value>` | Conversion range of the low level ADC peripheral in mV. |
+
+# Build
+
+A static library can be compiled by command line with `cmake`.
+
+```bash
+mkdir build
+cd build
+cmake -DCMAKE_TOOLCHAIN_FILE="<toolchain_file_path>" \
+      -DTOOLCHAIN_PATH="<arm-none-eabi-gcc_path>" \
+      -DTYPES_PATH="<types_file_path>" \
+      -DEMBEDDED_UTILS_PATH="<embedded-utils_path>" \
+      -DTRCS_DRIVER_GPIO_ERROR_BASE_LAST=0 \
+      -DTRCS_DRIVER_TIMER_ERROR_BASE_LAST=0 \
+      -DTRCS_DRIVER_ADC_ERROR_BASE_LAST=0 \
+      -DTRCS_DRIVER_ADC_RANGE_MV=3300 \
+      -G "Unix Makefiles" ..
+make all
+```

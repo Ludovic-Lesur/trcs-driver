@@ -1,0 +1,20 @@
+/*
+ * trcs_driver_flags.h
+ *
+ *  Created on: 17 oct. 2024
+ *      Author: Ludo
+ */
+
+#ifndef __TRCS_DRIVER_FLAGS_H__
+#define __TRCS_DRIVER_FLAGS_H__
+
+/*** TRCS driver compilation flags ***/
+
+#cmakedefine TRCS_DRIVER_GPIO_ERROR_BASE_LAST       @TRCS_DRIVER_GPIO_ERROR_BASE_LAST@
+#cmakedefine TRCS_DRIVER_TIMER_ERROR_BASE_LAST      @TRCS_DRIVER_TIMER_ERROR_BASE_LAST@
+#cmakedefine TRCS_DRIVER_ADC_ERROR_BASE_LAST        @TRCS_DRIVER_ADC_ERROR_BASE_LAST@
+
+#cmakedefine TRCS_DRIVER_ADC_RANGE_MV               @TRCS_DRIVER_ADC_RANGE_MV@
+
+#endif /* __TRCS_DRIVER_FLAGS_H__ */
+
