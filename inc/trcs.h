@@ -39,16 +39,16 @@ typedef enum {
 #ifndef TRCS_DRIVER_DISABLE
 
 /*!******************************************************************
- * \enum TRCS_range_state_t
+ * \enum TRCS_output_current_range_state_t
  * \brief TRCS current measurement ranges state.
  *******************************************************************/
 typedef enum {
-    TRCS_RANGE_STATE_NONE = 0,
-    TRCS_RANGE_STATE_LOW,
-    TRCS_RANGE_STATE_MIDDLE,
-    TRCS_RANGE_STATE_HIGH,
-    TRCS_RANGE_STATE_LAST
-} TRCS_range_state_t;
+    TRCS_OUTPUT_CURRENT_RANGE_STATE_NONE = 0,
+    TRCS_OUTPUT_CURRENT_RANGE_STATE_LOW,
+    TRCS_OUTPUT_CURRENT_RANGE_STATE_MIDDLE,
+    TRCS_OUTPUT_CURRENT_RANGE_STATE_HIGH,
+    TRCS_OUTPUT_CURRENT_RANGE_STATE_LAST
+} TRCS_output_current_range_state_t;
 
 /*!******************************************************************
  * \fn TRCS_process_cb_t
@@ -104,22 +104,22 @@ TRCS_status_t TRCS_stop(void);
 TRCS_status_t TRCS_process(void);
 
 /*!******************************************************************
- * \fn TRCS_range_state_t TRCS_get_range_state(void)
- * \brief Get TRCS current range state.
+ * \fn TRCS_status_t TRCS_get_output_current_range_state(TRCS_output_current_range_state_t* output_current_range_state)
+ * \brief Get TRCS output current range state.
  * \param[in]   none
- * \param[out]  none
- * \retval      TRCS range state.
+ * \param[out]  output_current_range_state: Pointer to the current ranges state.
+ * \retval      Function execution status.
  *******************************************************************/
-TRCS_range_state_t TRCS_get_range_state(void);
+TRCS_status_t TRCS_get_output_current_range_state(TRCS_output_current_range_state_t* output_current_range_state);
 
 /*!******************************************************************
- * \fn int32_t TRCS_get_iout(void)
+ * \fn TRCS_status_t TRCS_get_output_current(int32_t* output_current_ua)
  * \brief Get TRCS measured output current.
  * \param[in]   none
- * \param[out]  none
- * \retval      Measured output current in uA.
+ * \param[out]  output_current_ua: Pointer to the computed output current in uA.
+ * \retval      Function execution status.
  *******************************************************************/
-int32_t TRCS_get_iout(void);
+TRCS_status_t TRCS_get_output_current(int32_t* output_current_ua);
 
 /*******************************************************************/
 #define TRCS_exit_error(base) { ERROR_check_exit(trcs_status, TRCS_SUCCESS, base) }

@@ -52,21 +52,21 @@ TRCS_status_t __attribute__((weak)) TRCS_HW_timer_stop(void) {
 }
 
 /*******************************************************************/
-TRCS_status_t __attribute__((weak)) TRCS_HW_set_range_state(TRCS_range_t range, uint8_t state) {
+TRCS_status_t __attribute__((weak)) TRCS_HW_set_output_current_range_state(TRCS_output_current_range_t output_current_range, uint8_t state) {
     // Local variables.
     TRCS_status_t status = TRCS_SUCCESS;
     /* To be implemented */
-    UNUSED(range);
+    UNUSED(output_current_range);
     UNUSED(state);
     return status;
 }
 
 /*******************************************************************/
-TRCS_status_t __attribute__((weak)) TRCS_HW_adc_get_iout(int32_t* iout_mv) {
+TRCS_status_t __attribute__((weak)) TRCS_HW_adc_get_output_current(int32_t* output_current_mv) {
     // Local variables.
     TRCS_status_t status = TRCS_SUCCESS;
     /* To be implemented */
-    UNUSED(iout_mv);
+    UNUSED(output_current_mv);
     return status;
 }
 
