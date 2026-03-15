@@ -21,6 +21,7 @@ Here is the versions compatibility table:
 
 | **trcs-driver** | **embedded-utils** |
 |:---:|:---:|
+| [sw2.1](https://github.com/Ludovic-Lesur/trcs-driver/releases/tag/sw2.1) | >= [sw7.0](https://github.com/Ludovic-Lesur/embedded-utils/releases/tag/sw7.0) |
 | [sw2.0](https://github.com/Ludovic-Lesur/trcs-driver/releases/tag/sw2.0) | >= [sw7.0](https://github.com/Ludovic-Lesur/embedded-utils/releases/tag/sw7.0) |
 | [sw1.5](https://github.com/Ludovic-Lesur/trcs-driver/releases/tag/sw1.5) | >= [sw7.0](https://github.com/Ludovic-Lesur/embedded-utils/releases/tag/sw7.0) |
 | [sw1.4](https://github.com/Ludovic-Lesur/trcs-driver/releases/tag/sw1.4) | >= [sw7.0](https://github.com/Ludovic-Lesur/embedded-utils/releases/tag/sw7.0) |
